@@ -160,12 +160,17 @@ echo $this->Html->css('AclManager.default',['inline' => false]);
 	</div>
   </div>
 </section>
+<?php $this->start('scriptBottom'); ?>
 
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/rowgroup/1.0.2/css/rowGroup.dataTables.min.css">
-<script type="text/javascript" language="javascript" src="//cdn.datatables.net/rowgroup/1.0.2/js/dataTables.rowGroup.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/rg-1.1.0/datatables.min.css"/>
+<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/rg-1.1.0/datatables.min.js"></script>
+
+
 <script>
-    $(document).ready(function(){
-        $('#datatable').DataTable({
+    jQuery(document).ready(function(){
+        //jQuery('#datatable').DataTable();
+	/*
+        jQuery('#datatable').DataTable({
             'paging'         : true,
             'lengthChange'   : false,
             'searching'      : false,
@@ -173,7 +178,6 @@ echo $this->Html->css('AclManager.default',['inline' => false]);
             'info'           : false,
             'autoWidth'      : false,
             'iDisplayLength' : 500,
-            'language'	     : {"url": "//cdn.datatables.net/plug-ins/1.10.16/i18n/Hungarian.json"},
             'aoColumnDefs'   : [
                 {
                     "bSortable" : false,
@@ -182,6 +186,9 @@ echo $this->Html->css('AclManager.default',['inline' => false]);
             ]
 
         });
+	*/
     });
 
 </script>
+<?php  $this->end(); ?>
+
