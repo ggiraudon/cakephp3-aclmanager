@@ -169,7 +169,6 @@ echo $this->Html->css('AclManager.default',['inline' => false]);
 <script>
     jQuery(document).ready(function(){
         //jQuery('#datatable').DataTable();
-	/*
         jQuery('#datatable').DataTable({
             'paging'         : true,
             'lengthChange'   : false,
@@ -186,7 +185,6 @@ echo $this->Html->css('AclManager.default',['inline' => false]);
             ]
 
         });
-	*/
     });
 
 </script>
